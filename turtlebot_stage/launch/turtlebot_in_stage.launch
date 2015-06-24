@@ -68,13 +68,20 @@
     <param name="frame_id" value="/map"/>
   </node>
 
-  <include file="$(find turtlebot_navigation)/launch/includes/amcl.launch.xml">
+    <include file="$(find gopher_meta)/resources/launch/components/navigation/fake_localisation.launch.xml">
+    <arg name="odom_topic"          value="odom"/>
+    <arg name="delta_x"             value="-2.0"/>
+    <arg name="delta_y"             value="-2.0"/>
+    <arg name="delta_yaw"           value="0.0"/>
+  </include>
+  
+<!--  <include file="$(find turtlebot_navigation)/launch/includes/amcl.launch.xml">
     <arg name="scan_topic" value="scan"/>
     <arg name="use_map_topic" value="true"/>
     <arg name="initial_pose_x" value="$(arg initial_pose_x)"/>
     <arg name="initial_pose_y" value="$(arg initial_pose_y)"/>
     <arg name="initial_pose_a" value="$(arg initial_pose_a)"/>
-  </include>
+  </include>-->
 
   <!--  **************** Visualisation ****************  -->
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find turtlebot_stage)/rviz/robot_navigation.rviz"/>
