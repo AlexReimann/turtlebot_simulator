@@ -45,7 +45,7 @@ interval_sim 100  # simulation timestep in milliseconds
 
 window
 (
-  size [ 600 424 ] 
+  size [ 1920 1025 ] 
   rotate [ 0.000 0.000 ]
 )
 

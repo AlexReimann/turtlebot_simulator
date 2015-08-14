@@ -39,7 +39,7 @@ Visualization Manager:
       Cell Size: 0.02
       Class: rviz/Grid
       Color: 160; 160; 164
-      Enabled: true
+      Enabled: false
       Line Style:
         Line Width: 0.03
         Value: Lines
@@ -52,7 +52,7 @@ Visualization Manager:
       Plane: XY
       Plane Cell Count: 1000
       Reference Frame: <Fixed Frame>
-      Value: true
+      Value: false
     - Alpha: 1
       Class: rviz/RobotModel
       Collision Enabled: false
@@ -222,7 +222,13 @@ Visualization Manager:
           Class: rviz/Path
           Color: 0; 12; 255
           Enabled: true
+          Line Style: Lines
+          Line Width: 0.03
           Name: Planner
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
           Topic: /move_base/DWAPlannerROS/local_plan
           Value: true
         - Alpha: 0.5
@@ -300,7 +306,13 @@ Visualization Manager:
           Class: rviz/Path
           Color: 255; 0; 0
           Enabled: true
+          Line Style: Lines
+          Line Width: 0.03
           Name: Planner
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
           Topic: /move_base/GlobalPlanner/plan
           Value: true
       Enabled: true
@@ -331,7 +343,13 @@ Visualization Manager:
       Class: rviz/Path
       Color: 25; 255; 0
       Enabled: false
+      Line Style: Lines
+      Line Width: 0.03
       Name: Path (global)
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
       Topic: /move_base/NavfnROS/plan
       Value: false
     - Class: rviz/MarkerArray
@@ -362,13 +380,13 @@ Visualization Manager:
         - Angle Tolerance: 0.01
           Class: rviz/Odometry
           Color: 255; 128; 0
-          Enabled: true
+          Enabled: false
           Keep: 200
           Length: 0.03
           Name: Controlls
           Position Tolerance: 0.01
           Topic: /controlled
-          Value: true
+          Value: false
         - Angle Tolerance: 0.01
           Class: rviz/Odometry
           Color: 0; 128; 128
@@ -382,23 +400,23 @@ Visualization Manager:
         - Angle Tolerance: 0.01
           Class: rviz/Odometry
           Color: 192; 192; 0
-          Enabled: true
+          Enabled: false
           Keep: 200
           Length: 0.03
           Name: Predicted
           Position Tolerance: 0.01
           Topic: /predicted
-          Value: true
+          Value: false
         - Angle Tolerance: 0.01
           Class: rviz/Odometry
           Color: 255; 0; 0
-          Enabled: false
+          Enabled: true
           Keep: 200
           Length: 0.03
           Name: Odometry
           Position Tolerance: 0.01
           Topic: /odom
-          Value: false
+          Value: true
       Enabled: true
       Name: odoms
   Enabled: true
@@ -421,22 +439,22 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 4.50574
+      Distance: 13.9941
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 1.7505
-        Y: 3.6118
-        Z: -0.300375
+        X: 7.90251
+        Y: 4.52386
+        Z: -0.454178
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 1.5298
+      Pitch: 1.5598
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 6.27821
+      Yaw: 4.71321
     Saved: ~
 Window Geometry:
   Displays:
